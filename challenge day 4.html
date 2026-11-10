@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Day 4: Content Copier</title></head>
+<body>
+    <div id="source" contenteditable="true" style="border:1px solid black; padding:10px; margin-bottom:10px;">Type here to copy...</div>
+    <div id="target" style="border:1px dashed gray; padding:10px;">Target box</div>
+    <button id="copy-btn">Copy Content</button>
+    <script>
+        document.getElementById("copy-btn").addEventListener("click", () => {
+            document.getElementById("target").textContent = document.getElementById("source").textContent;
+        });
+    </script>
+</body>
+</html>
