@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Day 3: Image Remover</title></head>
+<body>
+    <img src="https://via.placeholder.com/150" alt="Placeholder">
+    <br><button id="toggle-img">Toggle Images</button>
+    <script>
+        document.getElementById("toggle-img").addEventListener("click", () => {
+            document.querySelectorAll("img").forEach(img => {
+                img.style.display = img.style.display === "none" ? "block" : "none";
+            });
+        });
+    </script>
+</body>
+</html>
